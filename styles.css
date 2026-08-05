@@ -1,0 +1,43 @@
+:root{--bg:#f7fafc;--card:#ffffff;--accent:#0f172a;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:var(--bg); color:#0b1220; line-height:1.45}
+.container{max-width:1000px;margin:0 auto;padding:28px}
+.site-header{background:linear-gradient(180deg,#ffffffcc,#f7f9fb);border-bottom:1px solid #e6e9ee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:18px}
+.nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+h1{margin:0;font-size:28px}
+.subtitle{margin:4px 0 0;color:var(--muted);font-weight:600}
+.contact{font-size:14px;color:var(--muted);text-align:right}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center;padding:36px 0}
+.hero-left h1{margin:0;font-size:32px}
+.lead{color:var(--muted);font-size:16px;margin:10px 0 18px}
+.actions .btn{margin-right:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid #e6e9ee;background:var(--card);color:var(--accent);text-decoration:none}
+.btn.primary{background:var(--accent);color:#fff;border:1px solid rgba(0,0,0,0.06)}
+.link-ghost{margin-left:8px;color:var(--muted);text-decoration:none}
+.hero-right .photo{height:180px;border-radius:8px;background:#eef2f7;overflow:hidden}
+.contact-card{margin-top:12px;color:var(--muted);font-size:14px}
+.projects{padding:28px 0}
+.projects h2{margin:0 0 18px;color:var(--accent);text-transform:uppercase;font-size:13px}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid #e6e9ee;padding:16px;border-radius:10px}
+.card h3{margin:0 0 6px}
+.card .muted{color:var(--muted);font-size:14px;margin:6px 0}
+.tags{display:flex;gap:8px;margin:10px 0}
+.tags span{background:#f3f6f9;padding:6px 8px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid #eef2f6}
+.card-actions{margin-top:12px}
+.card-actions .btn{padding:8px 12px;font-size:14px}
+.about{padding:28px 0}
+.about h2{margin-top:0}
+.site-footer{border-top:1px solid #e6e9ee;padding:18px 0;background:transparent}
+.small{font-size:13px;color:var(--muted)}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .nav{display:none}
+}
+

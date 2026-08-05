@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Houlaid AHAMADA — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Portfolio de Houlaid Ahamada — ingénieur Infrastructure & DevOps">
+  <style>/* small fallback to avoid FOIT */@font-face{font-family:InterLocal;src:local('Inter'),local('Segoe UI');}</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#home">Houlaid AHAMADA</a>
+      <nav class="nav">
+        <a href="#projects">Projets</a>
+        <a href="#about">À propos</a>
+        <a href="mailto:houlaid.ahamada@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>Ingénieur Infrastructure & DevOps</h1>
+        <p class="lead">Je conçois et industrialise des environnements fiables et automatisés — systèmes Linux, conteneurs, CI/CD et supervision.</p>
+        <p class="actions">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn" href="mailto:houlaid.ahamada@gmail.com">Me contacter</a>
+          <a class="link-ghost" href="https://github.com/houlaidahamada" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="photo">
+          <img src="./photo.jpg" alt="Photo Houlaid Ahamada" onerror="this.style.display='none'">
+        </div>
+        <div class="contact-card">
+          <div><strong>Marseille</strong> — disponible pour déménagement</div>
+          <div>Tél. : 06 01 31 64 82</div>
+          <div>Email : <a href="mailto:houlaid.ahamada@gmail.com">houlaid.ahamada@gmail.com</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projets sélectionnés</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>system-labs</h3>
+          <p class="muted">Labs perso pour révision des commandes Linux et exercices pratiques.</p>
+          <p class="tags"><span>Linux</span> <span>scripts</span> <span>exercices</span></p>
+          <p class="card-actions"><a class="btn" href="https://github.com/houlaidahamada/system-labs" target="_blank" rel="noopener">Voir sur GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>serveur-linux-home</h3>
+          <p class="muted">Mon homelab complet : déploiement, reverse-proxy, WireGuard, sauvegardes et automation.</p>
+          <p class="tags"><span>Docker</span> <span>Nginx</span> <span>WireGuard</span></p>
+          <p class="card-actions"><a class="btn" href="https://github.com/houlaidahamada/serveur-linux-home" target="_blank" rel="noopener">Voir sur GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>task-manager</h3>
+          <p class="muted">Application de gestion de tâches en Spring Boot 3 / Java — API REST, persistence PostgreSQL et CI/CD.</p>
+          <p class="tags"><span>Java</span> <span>Spring Boot</span> <span>Docker</span></p>
+          <p class="card-actions"><a class="btn" href="https://github.com/houlaidahamada/task-manager" target="_blank" rel="noopener">Voir sur GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>À propos</h2>
+      <p>Ingénieur en informatique, j'interviens à l'interface entre développement et exploitation. J'aime l'automatisation, la fiabilité et documenter mes travaux.</p>
+
+      <h3>Compétences</h3>
+      <div class="tags">
+        <span>Linux</span><span>Docker</span><span>PostgreSQL</span><span>CI/CD</span><span>WireGuard</span>
+      </div>
+
+      <h3>Formation</h3>
+      <p>Master Informatique — Faculté des Sciences, Marseille (2023 — 2025)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">© Houlaid AHAMADA — <a href="mailto:houlaid.ahamada@gmail.com">houlaid.ahamada@gmail.com</a></div>
+  </footer>
+</body>
+</html>
