@@ -20,8 +20,22 @@ h1{margin:0;font-size:28px}
 .btn.primary{background:var(--accent);color:#fff;border:1px solid rgba(0,0,0,0.06)}
 .btn.primary:hover{background:#1e293b}
 .link-ghost{margin-left:8px;color:var(--muted);text-decoration:none}
-.hero-right .photo{height:180px;border-radius:8px;background:#eef2f7;overflow:hidden}
-.hero-right .photo img{width:100%;height:100%;object-fit:cover}
+.hero-right .photo {
+  height: 220px; /* Ajuste cette hauteur selon le format de ta photo (ex: 200px ou 240px) */
+  border-radius: 8px;
+  background: #f1f5f9; /* Un fond gris très clair qui s'intègre bien */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* On remet cover pour remplir le cadre */
+  object-position: center top; /* Si le visage est trop haut, passe à center top ou ajuste en % */
+}
 .contact-card{margin-top:12px;color:var(--muted);font-size:14px}
 .projects{padding:28px 0}
 .projects h2{margin:0 0 18px;color:var(--accent);text-transform:uppercase;font-size:13px;letter-spacing:0.05em}
